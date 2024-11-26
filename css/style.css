@@ -1,0 +1,61 @@
+body
+{
+    background-color: #f7ecde;
+}
+header h1
+{
+    color: rgb(53, 46, 40);
+    font-family: "Pacifico", cursive;
+    font-size: 50px;
+    font-weight: 500;
+    position: relative;
+}
+header h1::before
+{
+    content: '';
+    background-color: #fec260;
+    width: 270px;
+    height: 20px;
+    color: #fec260;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+}
+header h2
+{
+    color: rgb(33, 37, 41);
+    font-family: "Righteous", sans-seris;
+    font-size: 25px;
+    font-weight: 500;
+    /*background-image: linear-gradient(to right, #3ca55c, #b5ac49);*/
+}
+.form
+{
+    border: dotted 2px;
+    border-left: none;
+    border-right: none;
+}
+.btn
+{
+    background-color: #d25330;
+    border: #bd4a2a;
+}
+.btn:hover{
+    background-color: #bb4120;
+    border: #bb4120;
+}
+.btn-primary{
+    --bs-btn-active-bg:#bb4120;
+}
+#btn{
+    background-color: #8a9e23;
+}
+#btn:hover{
+    background-color: #788d00;
+}
+#btn2{
+    background-color: #ee0f29;
+}
+#btn2:hover{
+    background-color: #d30820;
+}

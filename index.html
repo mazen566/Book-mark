@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="my-5 d-flex justify-content-center">Bookmarker</h1>
+            <div class="form">
+                <h2 class="pt-4 pb-5 d-flex justify-content-center"><i class="fa-solid fa-bookmark pe-2"></i> Bookmark your favorite sites <i class="fa-solid fa-bookmark ps-2"></i></h2>
+                <div class="mb-3">
+                    <label for="siteName" class="form-label"><i class="fa-solid fa-book-bookmark"></i> Site Name</label>
+                    <input type="text" class="form-control" id="siteName" required placeholder="Bookmark Name" >
+                </div>
+                <div class="mb-3">
+                    <label for="siteUrl" class="form-label"><i class="fa-solid fa-link"></i> Site URL</label>
+                    <input type="text" class="form-control" id="siteUrl" required placeholder="Website URL" oninput="siteUrlTest()">
+                </div>
+                <button type="button" class="btn btn-primary d-block mx-auto my-4 px-5 py-2" onclick="addSite()">Submit</button>
+            </div>
+            <div class="mt-5">
+                <table class="table text-center my-0">
+                    <thead>
+                        <tr>
+                            <th class="col-3">Index</th>
+                            <th class="col-3">Website Name</th>
+                            <th class="col-3">Visit</th>
+                            <th class="col-3">Delete</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+            <div class="display text-center" id="dataShow">
+                
+            </div>
+        </div>
+    </header>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
